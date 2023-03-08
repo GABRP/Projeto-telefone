@@ -4,37 +4,48 @@ public class Agenda {
 
     public static void main(String[] args) {
 
-        Telefone tel1 = new Telefone();
-        Contato cont = new Contato();
-        Telefone tel2 = new Telefone();
-        Contato cont2 = new Contato();
-        Telefone tel3 = new Telefone();
-        Contato cont3 = new Contato();
+        //Criando um objeto telefone utilizando um construtor
+        //sem parâmetro padrão
+        Contato contato1 = new Contato();
+        Contato contato2 = new Contato();
+        Contato contato3 = new Contato();
+        Contato contato4 = new Contato();
+        Telefone telefone1 = new Telefone();
+        Telefone telefone2 = new Telefone();
+        Telefone telefone3 = new Telefone();
+        Telefone telefone4 = new Telefone();
 
-        tel1.contato = cont;
-        cont.nome = "Rafaela";
-        cont.numero = "123456";
-        tel1.cor = "Vermelho";
-        tel1.marca = "iPhone";
+        contato1.nome = "Rafaela";
+        contato1.numero = "123456";
+        telefone1.contato = contato1;
+        telefone1.cor = "Vermelho";
+        telefone1.marca = "iPhone";
 
-        tel2.contato = cont2;
-        cont2.nome = "João";
-        cont2.numero = "318989952";
-        tel2.cor = "Preto";
-        tel2.marca = "S20";
+        contato2.nome = "João";
+        contato2.numero = "318989952";
+        telefone2.contato = contato2;
+        telefone2.cor = "Preto";
+        telefone2.marca = "S20";
 
-        tel3.contato = cont3;
-        cont3.nome = "Carmen";
-        cont3.numero = "3189871147";
-        tel3.cor = "Dourado";
-        tel3.marca = "iPhone";
+        contato3.nome = "Carmen";
+        contato3.numero = "3189871147";
+        telefone3.contato = contato3;
+        telefone3.cor = "Dourado";
+        telefone3.marca = "iPhone";
+
+        contato4.nome = "Juliana";
+        contato4.numero = "3165498778";
+        telefone4.contato = contato4;
+        telefone4.cor = "Verde";
+        telefone4.marca = "iPhone";
 
 
-        tel1.Tocar("Pagode");
-        tel2.Ligar(cont3);
+        telefone1.Tocar("Pagode");
+        telefone1.Ligar(contato4);
 
-        System.out.println(tel1.contato.nome + " " + tel1.contato.numero + " " + tel1.cor + " " + tel1.marca);
-        System.out.println(tel2.contato.nome + " "+ tel2.contato.numero + " " + tel2.cor + " " + tel2.marca);
-        System.out.println(tel3.contato.nome + " "+ tel3.contato.numero + " " + tel3.cor + " " + tel3.marca);
+        System.out.println("Nome: " + telefone1.contato.nome + "," + " " + "Numero: " + telefone1.contato.numero + "," + " " + "Cor: " + telefone1.cor + "," + " " + "Marca: " + telefone1.marca + ";");
+        System.out.println("Nome: " + telefone2.contato.nome + "," + " " + "Numero: " + telefone2.contato.numero + "," + " " + "Cor: " + telefone2.cor + "," + " " + "Marca: " + telefone2.marca + ";");
+        System.out.println("Nome: " + telefone3.contato.nome + "," + " " + "Numero: " + telefone3.contato.numero + "," + " " + "Cor: " + telefone3.cor + "," + " " + "Marca: " + telefone3.marca + ";");
+        System.out.println("Nome: " + telefone4.contato.nome + "," + " " + "Numero: " + telefone4.contato.numero + "," + " " + "Cor: " + telefone4.cor + "," + " " + "Marca: " + telefone4.marca + ".");
     }
 }

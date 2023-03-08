@@ -6,13 +6,23 @@ public class Telefone {
     public String cor;
 
     public void Tocar(String estilomusical){
-        System.out.println("Tocando " + estilomusical);
+        if (estilomusical == "Pagode")
+            System.out.println("Só tocamos pagode" + estilomusical);
+        else
+            System.out.println("Estilo de música indisponível");
     }
 
+    //public void Ligar(Telefone cor){
+        //if (cor.cor == "Preto")
+            //System.out.println("Ligando para o telefone preto de João" );
+        //else
+            //System.out.println("Telefone indisponível(O telefone não é preto)");
+    //}
     public void Ligar(Contato realizarligacao){
-        if (this.cor.equals("Preto"))
+        if (contato.nome == "Juliana"){
             System.out.println("Ligando para " + realizarligacao.nome);
+        }
         else
-            System.out.println("Telefone indisponível");
+            System.out.println("Telefone indisponível(O nome do contato não é Juliana)");
     }
 }

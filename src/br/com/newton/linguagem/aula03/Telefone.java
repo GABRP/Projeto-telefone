@@ -7,7 +7,7 @@ public class Telefone {
 
     public void Tocar(String estilomusical){
         if (estilomusical == "Pagode")
-            System.out.println("Só tocamos pagode" + estilomusical);
+            System.out.println("Só tocamos pagode");
         else
             System.out.println("Estilo de música indisponível");
     }

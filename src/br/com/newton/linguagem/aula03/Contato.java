@@ -5,6 +5,6 @@ public class Contato {
     //Atributo nome do tipo String
     public String nome;
 
-    //Atributo telefone do tipo String
-    public String telefone;
+    //Atributo numero do tipo String
+    public String numero;
 }
